@@ -14,10 +14,10 @@ class GoogleSearch(unittest.TestCase):
         self.driver.get("https://google.com")
         self.driver.find_element_by_name("q").send_keys("Automation Step by Step")
         self.driver.find_element_by_name("btnK").click()
-
+# This test will return as faileddue to invalid element name
     def test_search_raghav(self):
         self.driver.get("https://google.com")
-        self.driver.find_element_by_name("q").send_keys("Raghav Pal")
+        self.driver.find_element_by_name("q").send_keys("Automation Test")
         self.driver.find_element_by_name("btnK1").click()
 
     @classmethod
